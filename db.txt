@@ -1,0 +1,18 @@
+USED_CARS
+
+id - INT - PRIMARY_KEY(NOTNULL, UNIQUE) AUTO_INCREMENT
+group - VARCHAR(15) - NOTNULL   es. "Toyota"
+model - VARCHAR(40) - NOTNULL   es. "Fiesta"
+car_type - VARCHAR(15) - NULL   es. "SUV"
+color - VARCHAR(15) - NOTNULL   es. "chrome blue"
+engine - VARCHAR(20) - NOTNULL es. "2.4L I-4 cylinder"
+fuel - VARCHAR(10) - NOTNULL   es. "diesel"
+odometer - MEDIUMINT UNSIGNED - NOTNULL   es. "125000"
+price - DECIMAL (9, 2) - NOTNULL 
+license_plate - VARCHAR(10) - NOTNULL, UNIQUE  es. "ul352bv"
+chaissis - VARCHAR(20) - NOTNULL, UNIQUE   es. "xyzvrlks044210"
+year_costruction - YEAR - NULL   es. "2015"
+registration - DATE - NOTNULL   es. "2016-10-25"
+previous_owners - TINYINT UNSIGNED - NULL - DEFAULT(1)  es. "2"
+accidents - TINYINT UNSIGNED - NOTNULL - DEFAULT(0)
+notes - TEXT - NULL 
